@@ -1,0 +1,30 @@
+#相加平均と相乗平均を求めるプログラム
+
+import math
+numbers = []
+perfect = 15
+
+#得点を追加する。
+numbers.append(12)
+numbers.append(8)
+numbers.append(12)
+numbers.append(15)
+numbers.append(10)
+
+#相加平均の計算
+arithmetic_mean = sum(numbers) / len(numbers)
+
+#相乗平均の計算
+geometric_mean = math.prod(numbers) ** (1/len(numbers))
+
+#計算結果の表示
+print(arithmetic_mean )
+print(geometric_mean )
+
+#スコアに対する評価
+if perfect * 0.8 <= arithmetic_mean :
+     print("Nice!")
+else:
+     print("you're not done yet.")
+
+#ChatGPTに感謝します。
